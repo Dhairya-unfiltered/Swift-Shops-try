@@ -3,6 +3,12 @@ import logo from '../assets/newl.png'
 
 const Navbar = () => {
   let [isOpen, setIsOpen] = useState(false);
+  const redirectSignUp = () => {
+    window.location.href = "https://tally.so/r/n0Zzp6";
+  };
+  const redirectContact = () => {
+    window.location.href = "https://www.linkedin.com/in/shahdhairya245";
+  };
   return (
     <nav className="bg-transparent text-white w-full">
       <div className="md:px-5 py-4 px-3 md:flex justify-between items-center">
@@ -50,11 +56,12 @@ const Navbar = () => {
             isOpen ? 'top-20 opacity-100' : 'top-[-200px] md:opacity-100 opacity-0'
           }`}
         >
-          <li className="font-semibold my-7 md:my-0 md:ml-8">
+          <li onClick={redirectContact} className="font-semibold my-7 md:my-0 md:ml-8">
             <a href="https://www.linkedin.com/in/shahdhairya245" target="_blank" rel="noopener noreferrer">Waitlist</a>
           </li>
           <button
             type="button"
+            onClick={redirectSignUp}
             className="bg-white text-black font-semibold text-xl md:ml-8 rounded-full md:static px-5 py-2.5"
           >
             <a href="https://tally.so/r/n0Zzp6" target="_blank" rel="noopener noreferrer">

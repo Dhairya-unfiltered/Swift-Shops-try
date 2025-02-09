@@ -29,7 +29,7 @@ const Main = () => {
           </div>
           <h1 className="text-white text-3xl md:text-7xl font-bold mb-5">Hate Waiting in Queues?</h1>
           <p className="text-gray-300 text-lg md:text-2xl">
-            Swift Shops is sculpting the new era of hassle free shopping--where waiting is a thing of past.
+            Swift Shops is revolutionizing shopping with hassle-free convenience.
           </p>
           <a href="https://tally.so/r/n0Zzp6">
             <button 

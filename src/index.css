@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+
+.main {
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  
+}
+
+.video-bg {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+
+}
+
+.content {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.inside{
+  margin-top: -10%;
+}
+
+.sparkleimg{
+  height: 30px;
+  display: inline;
+  margin-right: 5px;
+}
+
+.award{
+  height: 250px;
+}
+
+@media (max-width: 755px) {
+  .inside{
+    margin-top: -30%;
+  }
+  .award{
+    height: 150px;
+  }
+  
+}
+
+.logo{
+  height: 50px;
+}
+
+
+
+button{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

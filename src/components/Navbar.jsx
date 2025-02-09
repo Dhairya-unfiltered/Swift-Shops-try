@@ -3,18 +3,15 @@ import logo from '../assets/newl.png'
 
 const Navbar = () => {
   let [isOpen, setIsOpen] = useState(false);
-  const redirectSignUp = () => {
-    window.location.href = "https://tally.so/r/n0Zzp6";
-  };
-  const redirectContact = () => {
-    window.location.href = "https://www.linkedin.com/in/shahdhairya245";
-  };
+  
+
+
   return (
     <nav className="bg-transparent text-white w-full">
       <div className="md:px-5 py-4 px-3 md:flex justify-between items-center">
         <div className="flex text-3xl cursor-pointer items-center gap-2">
-            <img src={logo} className="logo rounded-md" />
-          <span className="font-bold">SwiftShops</span>
+            <img src={logo} className="logo rounded-sm" />
+          <span className="font-bold">Swift Shops</span>
         </div>
         <div
           onClick={() => setIsOpen(!isOpen)}
@@ -27,7 +24,7 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="transform rotate-180"
+              className="transform rotate-180 hamburger"
             >
               <path
                 strokeLinecap="round"
@@ -42,6 +39,7 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
+              className="hamburger"
             >
               <path
                 strokeLinecap="round"
@@ -52,19 +50,18 @@ const Navbar = () => {
           )}
         </div>
         <ul
-          className={`md:flex text-xl pl-9 md:pl-0 md:items-center md:pb-0 pb-12 absolute md:static bg-transparent md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 transition-all duration-500 ease-in ${
+          className={`md:flex text-xl pl-9 md:pl-0 md:items-center md:pb-0 pb-12 absolute md:static bg-transparent md:z-auto z-10 left-0 w-full md:w-auto md:pl-0 transition-all duration-500 ease-in ${
             isOpen ? 'top-20 opacity-100' : 'top-[-200px] md:opacity-100 opacity-0'
           }`}
         >
-          <li onClick={redirectContact} className="font-semibold my-7 md:my-0 md:ml-8">
-            <a href="https://www.linkedin.com/in/shahdhairya245" target="_blank" rel="noopener noreferrer">Waitlist</a>
+          <li  className="font-semibold my-7 md:my-0 md:ml-8">
+            <a href="https://tally.so/r/n0Zzp6" target="_blank" rel="noopener noreferrer">Waitlist</a>
           </li>
           <button
             type="button"
-            onClick={redirectSignUp}
             className="bg-white text-black font-semibold text-xl md:ml-8 rounded-full md:static px-5 py-2.5"
           >
-            <a href="https://tally.so/r/n0Zzp6" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/shahdhairya245" target="_blank" rel="noopener noreferrer">
               Contact Us
             </a>
           </button>

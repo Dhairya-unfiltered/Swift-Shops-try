@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import videoBg from '../assets/bg2.mp4';
+import videoBg from '../assets/swiftshops_bg.mp4';
 import sparkle from '../assets/sparkle.png';
 import award from '../assets/feather1.png';
 import Navbar from './Navbar';
@@ -24,9 +24,7 @@ const Main = () => {
       <Navbar />
       <div className="content">
         <div className="inside text-center px-5 md:px-64">
-          <div className="flex -mb-5 justify-center">
-            <img src={award} className="award" />
-          </div>
+          
           <h1 className="text-white text-3xl md:text-7xl font-bold mb-5">Hate Waiting in Queues?</h1>
           <p className="text-gray-300 text-lg md:text-2xl">
             Swift Shops is revolutionizing shopping with hassle-free convenience.

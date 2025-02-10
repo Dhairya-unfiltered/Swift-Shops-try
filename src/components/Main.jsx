@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import videoBg from '../assets/swiftshops_bg.mp4';
+import videoBg from '../assets/bg2.mp4';
 import sparkle from '../assets/sparkle.png';
 import award from '../assets/feather1.png';
 import Navbar from './Navbar';

@@ -57,9 +57,12 @@ const Navbar = () => {
           <li  className="font-semibold my-7 md:my-0 md:ml-8">
             <a href="https://tally.so/r/n0Zzp6" target="_blank" rel="noopener noreferrer">Waitlist</a>
           </li>
+          <li  className="font-semibold block md:hidden my-7 md:my-0 md:ml-8">
+            <a href="https://www.linkedin.com/in/shahdhairya245" target="_blank" rel="noopener noreferrer">Contact Us</a>
+          </li>
           <button
             type="button"
-            className="bg-white text-black font-semibold text-xl md:ml-8 rounded-full md:static px-5 py-2.5"
+            className="bg-white hidden md:block text-black font-semibold text-xl md:ml-8 rounded-full md:static px-5 py-2.5"
           >
             <a href="https://www.linkedin.com/in/shahdhairya245" target="_blank" rel="noopener noreferrer">
               Contact Us

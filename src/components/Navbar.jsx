@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="bg-transparent text-white w-full">
       <div className="md:px-5 py-4 px-3 md:flex justify-between items-center">
-        <div className="flex text-3xl cursor-pointer items-center gap-2">
+        <div className="flex text-2xl md:text-3xl cursor-pointer items-center gap-2">
             <img src={logo} className="logo rounded-sm" />
           <span className="font-bold">Swift Shops</span>
         </div>

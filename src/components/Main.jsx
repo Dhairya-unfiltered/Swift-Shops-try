@@ -13,14 +13,6 @@ const Main = () => {
 
   return (
     <div className={`main ${videoLoaded ? '' : 'bg-black'}`}>
-      <video 
-        src={videoBg} 
-        autoPlay 
-        loop 
-        muted 
-        className="video-bg" 
-        onLoadedData={handleVideoLoad} 
-      />
       <Navbar />
       <div className="content">
         <div className="inside text-center px-5 md:px-64">
